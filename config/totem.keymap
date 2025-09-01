@@ -93,46 +93,11 @@
             hold-trigger-on-release;
         };
 
-        comma_semic: comma_semic {
-            compatible = "zmk,behavior-mod-morph";
-            label = "COMMA_SEMIC";
-            bindings = <&kp COMMA>, <&kp SEMI>;
-
-            #binding-cells = <0>;
-            mods = <(MOD_LSFT)>;
-        };
-
-        dot_colon: dot_colon {
-            compatible = "zmk,behavior-mod-morph";
-            label = "DOT_COLON";
-            bindings = <&kp DOT>, <&kp COLON>;
-
-            #binding-cells = <0>;
-            mods = <(MOD_LSFT)>;
-        };
-
-        ex_que: ex_que {
-            compatible = "zmk,behavior-mod-morph";
-            label = "EX_QUE";
-            bindings = <&kp EXCLAMATION>, <&kp QUESTION>;
-
-            #binding-cells = <0>;
-            mods = <(MOD_LSFT)>;
-        };
-
         gaming_switch: gaming_switch {
             compatible = "zmk,behavior-tap-dance";
             label = "GAMING_SWITCH";
             #binding-cells = <0>;
             bindings = <&to 0>, <&to 5>;
-        };
-
-        swapper: swapper {
-            compatible = "zmk,behavior-tri-state";
-            #binding-cells = <0>;
-            bindings = <&kt LALT>, <&kp TAB>, <&kt LALT>;
-
-            ignored-key-positions = <LT2 RT2 RM1 RM2 RM3>;
         };
 
         hold_sticky: hold_sticky {
@@ -181,10 +146,10 @@
 
         Sym {
             bindings = <
-        &swapper  &kp AT     &kp HASH         &kp DLLR         &kp PRCNT    &kp CARET      &kp PLUS          &kp ASTRK        &kp AMPERSAND  &kp COLON
-        &kp ESC   &kp LBKT   &hml LCTRL LBRC  &hml LSHFT LPAR  &kp LT       &kp GT         &hmr LSHIFT RPAR  &hmr LCTRL RBRC  &kp RBKT       &kp SEMI
-&trans  &trans    &kp GRAVE  &kp BSLH         &kp EQUAL        &kp TILDE    &kp UNDER      &kp MINUS         &kp SLASH        &kp PIPE       &kp QUESTION  &trans
-                             &trans           &trans           &trans       &kp BACKSPACE  &kp DEL           &trans
+        &none    &kp AT     &kp HASH         &kp DLLR         &kp PRCNT    &kp CARET      &kp PLUS          &kp ASTRK        &kp AMPERSAND  &kp COLON
+        &kp ESC  &kp LBKT   &hml LCTRL LBRC  &hml LSHFT LPAR  &kp LT       &kp GT         &hmr LSHIFT RPAR  &hmr LCTRL RBRC  &kp RBKT       &kp SEMI
+&trans  &trans   &kp GRAVE  &kp BSLH         &kp EQUAL        &kp TILDE    &kp UNDER      &kp MINUS         &kp SLASH        &kp PIPE       &kp QUESTION  &trans
+                            &trans           &trans           &trans       &kp BACKSPACE  &kp DEL           &trans
             >;
         };
 
@@ -208,7 +173,7 @@
 
         Nav {
             bindings = <
-        &swapper         &trans     &trans     &trans      &trans    &trans         &kp HOME        &kp PAGE_DOWN   &kp PG_UP     &kp END
+        &none            &trans     &trans     &trans      &trans    &trans         &kp HOME        &kp PAGE_DOWN   &kp PG_UP     &kp END
         &mt LGUI ESCAPE  &kp LALT   &kp LCTRL  &kp LSHIFT  &trans    &trans         &kp LEFT        &kp DOWN        &kp UP        &kp RIGHT
 &trans  &kp LC(Z)        &kp LC(X)  &kp LC(C)  &kp LC(V)   &trans    &trans         &msc SCRL_LEFT  &msc SCRL_DOWN  &msc SCRL_UP  &msc SCRL_RIGHT  &trans
                                     &trans     &trans      &trans    &kp BACKSPACE  &kp DELETE      &trans
@@ -226,7 +191,7 @@
 
         GamingNum {
             bindings = <
-        &swapper      &kp N1  &kp N2  &kp N3  &kp T     &trans  &trans  &trans  &trans  &trans
+        &none         &kp N1  &kp N2  &kp N3  &kp T     &trans  &trans  &trans  &trans  &trans
         &kp ESC       &kp N4  &kp N5  &kp N6  &kp G     &trans  &trans  &trans  &trans  &trans
 &trans  &kp LEFT_ALT  &kp F1  &kp F2  &kp F3  &kp B     &trans  &trans  &trans  &trans  &trans  &trans
                               &trans  &trans  &trans    &trans  &trans  &trans
