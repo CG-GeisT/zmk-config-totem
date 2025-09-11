@@ -20,11 +20,24 @@
 #define KEYS_R RT0 RT1 RT2 RT3 RT4 RM0 RM1 RM2 RM3 RM4 RB0 RB1 RB2 RB3 RB4
 #define THUMBS LH2 LH1 LH0 RH0 RH1 RH2
 
+&sk {
+    release-after-ms = <900>;
+    quick-release;
+};
+
+&sl { ignore-modifiers; };
+
 &mt {
-    quick-tap-ms = <100>;
-    global-quick-tap;
     flavor = "tap-preferred";
-    tapping-term-ms = <170>;
+    tapping-term-ms = <220>;
+    quick-tap-ms = <220>;
+    hold-trigger-key-positions = <0>;
+};
+
+&lt {
+    flavor = "balanced";
+    quick-tap-ms = <175>;
+    tapping-term-ms = <200>;
 };
 
 / {
@@ -97,7 +110,7 @@
 
         Enter {
             bindings = <&kp ENTER>;
-            key-positions = <34 35>;
+            key-positions = <16 17 18>;
         };
 
         tilde {
