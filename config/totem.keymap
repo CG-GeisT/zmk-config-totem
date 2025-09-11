@@ -173,10 +173,10 @@
 
         game_layer {
             bindings = <
-        &kp TAB    &kp Q  &kp W   &kp E  &kp R        &trans     &trans     &trans  &trans  &trans
-        &kp LSHFT  &kp A  &kp S   &kp D  &kp F        &kp G      &trans     &trans  &trans  &trans
-&trans  &kp LCTRL  &kp Z  &kp X   &kp C  &kp V        &trans     &trans     &trans  &trans  &trans  &trans
-                          &trans  &mo 6  &kp SPACE    &kp SPACE  &kp RCTRL  &trans
+        &kp TAB    &kp Q  &kp W  &kp E  &kp R        &trans     &trans     &trans  &trans  &trans
+        &kp LSHFT  &kp A  &kp S  &kp D  &kp F        &kp G      &trans     &trans  &trans  &trans
+&trans  &kp LCTRL  &kp Z  &kp X  &kp C  &kp V        &trans     &trans     &trans  &trans  &trans  &trans
+                          &kp M  &mo 6  &kp SPACE    &kp SPACE  &kp RCTRL  &trans
             >;
 
             label = "GAME";
@@ -187,7 +187,7 @@
         &trans    &kp N1  &kp N2  &kp N3  &kp T     &trans  &trans  &trans  &trans  &trans
         &trans    &kp N4  &kp N5  &kp N6  &kp G     &trans  &trans  &trans  &trans  &trans
 &trans  &kp LALT  &kp F1  &kp F2  &kp F3  &kp B     &trans  &trans  &trans  &trans  &trans  &trans
-                          &kp M   &trans  &trans    &trans  &trans  &trans
+                          &trans  &trans  &trans    &trans  &trans  &trans
             >;
 
             label = "GAME-NUM";
