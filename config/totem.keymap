@@ -156,7 +156,7 @@
         &kp EXCLAMATION  &kp AT            &kp HASH               &kp DOLLAR            &kp PERCENT    &kp CARET         &kp PLUS               &kp ASTRK               &kp AMPERSAND      &kp COLON
         &trans           &kp LEFT_BRACKET  &hml LCTRL LEFT_BRACE  &hml LEFT_SHIFT LPAR  &kp LT         &kp GREATER_THAN  &hmr RIGHT_SHIFT RPAR  &hmr RCTRL RIGHT_BRACE  &kp RIGHT_BRACKET  &kp SEMICOLON
 &trans  &trans           &kp GRAVE         &kp BSLH               &kp EQUAL             &kp TILDE      &kp UNDER         &kp MINUS              &kp FSLH                &kp PIPE           &kp QUESTION   &trans
-                                           &trans                 &mo 1                 &trans         &trans            &kp BSPC               &trans
+                                           &trans                 &trans                &trans         &trans            &kp BSPC               &trans
             >;
         };
 
