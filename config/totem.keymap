@@ -108,11 +108,6 @@
             bindings = <&kp ESC>;
         };
 
-        Enter_R {
-            bindings = <&kp ENTER>;
-            key-positions = <17 18>;
-        };
-
         tilde {
             bindings = <&kp TILDE>;
             key-positions = <0 1>;
@@ -128,9 +123,14 @@
             key-positions = <5 4>;
         };
 
-        Enter_L {
+        enter_L {
             bindings = <&kp ENTER>;
-            key-positions = <12 11>;
+            key-positions = <2 3>;
+        };
+
+        enter_R {
+            bindings = <&kp ENTER>;
+            key-positions = <6 7>;
         };
     };
 
