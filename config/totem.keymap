@@ -45,10 +45,10 @@
         hml: home_row_mod_left {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
-            flavor = "tap-preferred";
-            require-prior-idle-ms = <150>;
+            flavor = "balanced";
+            require-prior-idle-ms = <140>;
             tapping-term-ms = <280>;
-            quick-tap-ms = <175>;
+            quick-tap-ms = <165>;
             bindings = <&kp>, <&kp>;
 
             hold-trigger-key-positions = < KEYS_L THUMBS >; // List of keys on the right side of the keyboard
@@ -58,10 +58,10 @@
         hmr: home_row_mod_right {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
-            flavor = "tap-preferred";
-            require-prior-idle-ms = <150>;
+            flavor = "balanced";
+            require-prior-idle-ms = <140>;
             tapping-term-ms = <280>;
-            quick-tap-ms = <175>;
+            quick-tap-ms = <165>;
             bindings = <&kp>, <&kp>;
 
             hold-trigger-key-positions = < KEYS_R THUMBS >; // List of keys on the left side of the keyboard
@@ -108,9 +108,9 @@
             bindings = <&kp ESC>;
         };
 
-        Enter {
+        Enter_R {
             bindings = <&kp ENTER>;
-            key-positions = <16 17 18>;
+            key-positions = <17 18>;
         };
 
         tilde {
@@ -127,6 +127,11 @@
             bindings = <&tog 2>;
             key-positions = <5 4>;
         };
+
+        Enter_L {
+            bindings = <&kp ENTER>;
+            key-positions = <12 11>;
+        };
     };
 
     keymap {
@@ -136,7 +141,7 @@
             label = "BASE";
             bindings = <
            &kp B            &kp F            &kp L         &kp K              &kp Q          &kp P        &kp G               &kp O         &kp U             &kp DOT
-           &hml LEFT_WIN N  &hml LEFT_ALT S  &hmr LCTRL H  &hml LEFT_SHIFT T  &kp M          &kp Y        &hmr RIGHT_SHIFT C  &hmr RCTRL A  &hmr RIGHT_ALT E  &hmr RIGHT_WIN I
+           &hml LEFT_WIN N  &hml LEFT_ALT S  &hml LCTRL H  &hml LEFT_SHIFT T  &kp M          &kp Y        &hmr RIGHT_SHIFT C  &hmr RCTRL A  &hmr RIGHT_ALT E  &hmr RIGHT_WIN I
 &art_mode  &kp X            &kp V            &kp J         &kp D              &kp Z          &kp APOS     &kp W               &kp FSLH      &kp SEMI          &kp COMMA         &game_mode
                                              &lt 4 TAB     &kp R              &lt 3 SPACE    &lt 1 SPACE  &magic_shift        &kp DELETE
             >;
