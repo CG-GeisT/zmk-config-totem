@@ -88,11 +88,11 @@
             bindings = <&to 0>, <&to 5>;
         };
 
-        art_mode: art_mode {
+        numpad_mode: numpad_mode {
             compatible = "zmk,behavior-tap-dance";
-            label = "ART_MODE";
+            label = "NUMPAD_MODE";
             #binding-cells = <0>;
-            bindings = <&to 0>, <&to 7>, <&to 2>;
+            bindings = <&to 0>, <&to 2>;
         };
 
         hold_sticky: hold_sticky {
@@ -153,10 +153,10 @@
         base_layer {
             label = "BASE";
             bindings = <
-           &kp B            &kp F            &kp L         &kp K              &kp Q          &kp P        &kp G               &kp O         &kp U             &kp DOT
-           &hml LEFT_WIN N  &hml LEFT_ALT S  &hml LCTRL H  &hml LEFT_SHIFT T  &kp M          &kp Y        &hmr RIGHT_SHIFT C  &hmr RCTRL A  &hmr RIGHT_ALT E  &hmr RIGHT_WIN I
-&art_mode  &kp X            &kp V            &kp J         &kp D              &kp Z          &kp APOS     &kp W               &kp FSLH      &kp SEMI          &kp COMMA         &game_mode
-                                             &lt 4 TAB     &kp R              &lt 3 SPACE    &lt 1 SPACE  &magic_shift        &kp DELETE
+              &kp B            &kp F            &kp L         &kp K              &kp Q          &kp P        &kp G               &kp O         &kp U             &kp DOT
+              &hml LEFT_WIN N  &hml LEFT_ALT S  &hml LCTRL H  &hml LEFT_SHIFT T  &kp M          &kp Y        &hmr RIGHT_SHIFT C  &hmr RCTRL A  &hmr RIGHT_ALT E  &hmr RIGHT_WIN I
+&numpad_mode  &kp X            &kp V            &kp J         &kp D              &kp Z          &kp APOS     &kp W               &kp FSLH      &kp SEMI          &kp COMMA         &game_mode
+                                                &lt 4 TAB     &kp R              &lt 3 SPACE    &lt 1 SPACE  &magic_shift        &kp DELETE
             >;
         };
 
@@ -204,9 +204,9 @@
 
         game_layer {
             bindings = <
-        &kp TAB    &kp Q  &kp W  &kp E  &kp R        &trans     &trans     &trans  &trans  &trans
-        &kp LSHFT  &kp A  &kp S  &kp D  &kp F        &kp G      &trans     &trans  &trans  &trans
-&trans  &kp LCTRL  &kp Z  &kp X  &kp C  &kp V        &trans     &trans     &trans  &trans  &trans  &trans
+        &kp TAB    &kp Q  &kp W  &kp E  &kp R        &trans     &trans     &trans    &trans  &trans
+        &kp LSHFT  &kp A  &kp S  &kp D  &kp F        &kp G      &kp LEFT   &kp DOWN  &kp UP  &kp RIGHT
+&trans  &kp LCTRL  &kp Z  &kp X  &kp C  &kp V        &trans     &trans     &trans    &trans  &trans     &trans
                           &kp M  &mo 6  &kp SPACE    &kp SPACE  &kp RCTRL  &trans
             >;
 
@@ -222,17 +222,6 @@
             >;
 
             label = "GAME-NUM";
-        };
-
-        art_layer {
-            bindings = <
-        &kp LC(S)      &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
-        &kp LC(LS(S))  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
-&trans  &trans         &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-                               &trans  &trans  &trans    &trans  &trans  &trans
-            >;
-
-            label = "ART";
         };
     };
 };
