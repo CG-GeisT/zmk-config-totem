@@ -85,14 +85,14 @@
             compatible = "zmk,behavior-tap-dance";
             label = "GAME_MODE";
             #binding-cells = <0>;
-            bindings = <&to 0>, <&to 5>;
+            bindings = <&to 5>, <&to 0>;
         };
 
         numpad_mode: numpad_mode {
             compatible = "zmk,behavior-tap-dance";
             label = "NUMPAD_MODE";
             #binding-cells = <0>;
-            bindings = <&to 0>, <&to 2>;
+            bindings = <&to 2>, <&to 0>;
         };
 
         hold_sticky: hold_sticky {
