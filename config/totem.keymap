@@ -172,10 +172,10 @@
 
         num_Pad {
             bindings = <
-        &trans  &trans  &trans  &trans  &trans    &trans  &kp KP_N7  &kp KP_N8  &kp KP_N9  &kp KP_NUM
-        &trans  &trans  &trans  &trans  &trans    &trans  &kp KP_N4  &kp KP_N5  &kp KP_N6  &kp MINUS
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &kp KP_N1  &kp KP_N2  &kp KP_N3  &kp PLUS    &trans
-                        &trans  &trans  &trans    &trans  &kp KP_N0  &kp DOT
+        &trans  &trans  &kp LS(S)  &kp LS(LC(S))  &trans    &trans  &kp KP_N7  &kp KP_N8  &kp KP_N9  &kp KP_NUM
+        &trans  &trans  &trans     &trans         &trans    &trans  &kp KP_N4  &kp KP_N5  &kp KP_N6  &kp MINUS
+&trans  &trans  &trans  &trans     &trans         &trans    &trans  &kp KP_N1  &kp KP_N2  &kp KP_N3  &kp PLUS    &trans
+                        &trans     &trans         &trans    &trans  &kp KP_N0  &kp DOT
             >;
 
             label = "NUM-PAD";
@@ -184,7 +184,7 @@
         sim_layer {
             label = "SYM";
             bindings = <
-        &kp EXCLAMATION  &kp AT            &kp HASH               &kp DOLLAR            &kp PERCENT    &kp CARET         &kp PLUS               &kp ASTRK               &kp AMPERSAND      &kp COLON
+        &kp EXCLAMATION  &kp AT            &kp HASH               &kp DOLLAR            &kp PERCENT    &kp CARET         &kp AMPERSAND          &kp ASTRK               &kp PLUS           &kp COLON
         &trans           &kp LEFT_BRACKET  &hml LCTRL LEFT_BRACE  &hml LEFT_SHIFT LPAR  &kp LT         &kp GREATER_THAN  &hmr RIGHT_SHIFT RPAR  &hmr RCTRL RIGHT_BRACE  &kp RIGHT_BRACKET  &kp SEMICOLON
 &trans  &trans           &kp GRAVE         &kp BSLH               &kp EQUAL             &kp TILDE      &kp UNDER         &kp MINUS              &kp FSLH                &kp PIPE           &kp QUESTION   &trans
                                            &trans                 &trans                &trans         &trans            &kp BSPC               &trans
