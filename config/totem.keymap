@@ -156,7 +156,7 @@
             &kp B            &kp F            &kp L         &kp K              &kp Q          &kp P        &kp G               &kp O         &kp U             &kp DOT
             &hml LEFT_WIN N  &hml LEFT_ALT S  &hml LCTRL H  &hml LEFT_SHIFT T  &kp M          &kp Y        &hmr RIGHT_SHIFT C  &hmr RCTRL A  &hmr RIGHT_ALT E  &hmr RIGHT_WIN I
 &game_mode  &kp X            &kp V            &kp J         &hml LEFT_WIN D    &kp Z          &kp APOS     &kp W               &kp FSLH      &kp SEMI          &kp COMMA         &numpad_mode
-                                              &lt 4 TAB     &kp R              &lt 1 SPACE    &lt 3 SPACE  &magic_shift        &kp DELETE
+                                              &lt 4 TAB     &kp R              &lt 3 SPACE    &lt 1 SPACE  &magic_shift        &kp DELETE
             >;
         };
 
