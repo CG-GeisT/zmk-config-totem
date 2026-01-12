@@ -231,6 +231,8 @@
 &trans  &kp Z  &kp X            &kp C         &kp V              &kp B     &kp N   &kp M               &kp COMMA     &kp DOT           &kp FSLH  &trans
                                 &trans        &to 2              &trans    &trans  &trans              &trans
             >;
+
+            label = "ART";
         };
     };
 };
