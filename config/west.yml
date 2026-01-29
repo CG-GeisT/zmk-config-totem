@@ -3,11 +3,11 @@ manifest:
     - name: zmkfirmware
       url-base: https://github.com/zmkfirmware
     - name: janpfischer
-      url-base: https://github.com/janpfischer
+      url-base: https://github.com/janpfischer/tree/upgrade-4.1
   projects:
     - name: zmk
       remote: zmkfirmware
-      revision: v0.3.0
+      revision: main
       import: app/west.yml
     - name: zmk-dongle-screen
       remote: janpfischer
